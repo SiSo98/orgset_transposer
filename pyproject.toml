@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orgset-transposer"
+version = "0.1.0"
+description = "CLI tool to transpose SAP orgset CSV files into a wide matrix format"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.2.0",
+    "openpyxl>=3.1.0",
+]
+authors = [
+    {name = "Replace with your name"}
+]
+license = {text = "MIT"}
+keywords = ["sap", "csv", "cli", "transpose", "orgset"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.scripts]
+orgset-transposer = "orgset_transposer.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
