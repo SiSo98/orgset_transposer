@@ -1,6 +1,6 @@
 # orgset-transposer
 
-A small local Python CLI tool that transposes SAP orgset CSV files into a wide matrix.
+A small local Python CLI tool that transposes SAP orgset CSV (e.g from XITING XAMS) files into a wide matrix.
 
 ## Important disclosure
 
